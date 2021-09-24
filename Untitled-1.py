@@ -93,4 +93,5 @@ async def on_message(message):
         else:
             await message.channel.send("{}, 당신은 경찰청 고위간부(명령권자)가 아닙니다".format(message.author.mention))
     
-client.run('ODkwOTM4MjgxMDYyMTc4ODE3.YU3E7w.E2KfKoANawNFjfZ2uk9gE5X0TNM')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
